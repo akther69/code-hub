@@ -1,0 +1,15 @@
+modelname.objects.create(field="value")
+
+qs=modelname.objects.all()
+print(qs)
+
+qs=modelname.objects.get(id=1)
+qs.name
+
+qs=modelname.objects.filter(designation="accountant")
+
+modelname.objects.get(id=1).delete
+
+qs=modelname.objects.get(id=2)
+qs.name="abdul"
+qs.save()
